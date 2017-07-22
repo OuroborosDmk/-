@@ -90,6 +90,9 @@ header a:hover{
 	width:45%;
 	height:55px;
 }
+#teleform div:hover{
+	box-shadow:0 0 5px blue;
+}
 #teleform label{
 	margin-left:1%;
 	width:23%;
@@ -100,22 +103,24 @@ header a:hover{
 	height:50px;
 	font-size:15px;
 }
-#teleform div:nth-child(7){
-	width:45%;
-	border:none;
-	height:50px;
+#teleform label:nth-child(6){
+	margin-left:42%;  
+	width:40%;
 }
-#teleform div:nth-child(7) input{
-	margin-left:5%;
-	display:inline;
-	width:20px;
+#teleform label:nth-child(6) input{
+	width:5%;
+	vertical-align:middle;
+	margin-bottom:6px;
 }
 #teleform button{
-	border-radius:5px;
+	margin-top:10px;
+	border-radius:10px;
 	width:45%;
 	height:55px;
 	margin-left:42%;
-	font-size:25px;
+	font-size:18px;
+	background-color:red;
+	color:white;
 }
 #teleform p{
 	display:inline;
@@ -130,7 +135,10 @@ header a:hover{
 	margin-bottom:20px;
 	display:block;
 	width:45%;
-	height:50px;
+	height:55px;
+}
+#mailform div:hover{
+	box-shadow:0 0 5px blue;
 }
 #mailform label{
 	margin-left:1%;
@@ -140,18 +148,26 @@ header a:hover{
 #mailform input{
 	width:76%;
 	height:50px;
+	font-size:15px;
 }
-#mailform div:nth-child(7) #remember{
-	margin-left:42%;
-	display:inline;
-	width:20px;
+#mailform label:nth-child(6){
+	margin-left:42%;  
+	width:40%;
+}
+#mailform label:nth-child(6) input{
+	width:5%;
+	vertical-align:middle;
+	margin-bottom:6px;
 }
 #mailform button{
-	border-radius:5px;
+	margin-top:10px;
+	border-radius:10px;
 	width:45%;
 	height:55px;
 	margin-left:42%;
-	font-size:25px;
+	font-size:18px;
+	background-color:red;
+	color:white;
 }
 #mailform p{
 	display:inline;
