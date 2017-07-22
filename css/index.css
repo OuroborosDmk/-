@@ -1,1 +1,14 @@
-index.css
+*{
+	margin:0;
+	border:0;
+	padding:0;
+}
+body{
+	
+}
+header{
+	width:100%;
+}
+footer{
+	width:100%;
+}
