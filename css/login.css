@@ -14,8 +14,7 @@ body{
 	flex-direction:row;
 	justify-content:center;
 	align-items:center;
-	background-image:url(../images/469640.jpg);
-	background-size:cover;
+	background-image:url(../images/sign.jpg);
 }
 #section{
 	width:270px;
