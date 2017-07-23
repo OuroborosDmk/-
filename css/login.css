@@ -32,15 +32,6 @@ body{
 #section:hover{
 	box-shadow:0 0 5px blue;
 }
-
-/*第一部分*/
-#section-one{
-
-}
-/*第二部分*/
-#section-two{
-
-}
 #section-two form{
 	width:100%;
 	height:340px;
@@ -98,8 +89,4 @@ body{
 #signup{
 	margin-top:20px;
 	letter-spacing:1px;
-}
-/*第三部分*/
-#section-three{
-
 }
