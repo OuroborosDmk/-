@@ -1,3 +1,10 @@
-window.onload=function(){
-	
-}
+$(document).ready(function(){
+  	$("#telea").click(function(){
+		$("#teleform").css("display","block");
+		$("#mailform").css("display","none");
+	});
+	$("#maila").click(function(){
+		$("#teleform").css("display","none");
+		$("#mailform").css("display","block");
+	});
+});
