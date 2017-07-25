@@ -11,22 +11,25 @@
 	<div id="section">
 	   	<div id="section-two">
 	        <form action="#" method="post">
-	            <input type="hidden" value="">
+                <div>
+                    <label id="usertype1">个人</label><input id="persontype" type="radio" name="type" checked></input>
+                    <label id="usertype2">商户</label><input id="shoptype" type="radio" name="type"></input>
+                </div>
 	            <div>
 	                <label id="Username">用户名：</label>
-                    <input type="text" name="name" placeholder="用户名 / 邮箱 / 手机号" id="name" required>   
+                    <input type="text" name="name" placeholder="邮箱 / 手机号" id="name" required>   
 	            </div>
                 <div>
                     <label id="passwordtext">密码：</label>
                     <input type="password" name="password" placeholder="密码" id="password" required>  
                 </div>
                 <div>
-                    <input type="checkbox" name="remember" id="remember"></input><p>下次自动登录</p>
+                    <input type="checkbox" name="remember" id="remember" style="vertical-align:middle;"></input><p style="vertical-align:middle;">下次自动登录</p>
                 </div>             
                 <div>
                     <button type="submit" id="signin">登录</button>                                
                     <span id="forget"> <a href="#">忘记密码？</a></span>
-                    <p id="signup"><span>还没有账号？这就去<a href="#">注册</a></span></p>
+                    <p id="signup"><span>还没有账号？这就去<a href="javascript:void(0)">注册</a></span></p>
                 </div>
 	         </form>
 	    </div>

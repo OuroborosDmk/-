@@ -103,11 +103,11 @@ header a:hover{
 	height:50px;
 	font-size:15px;
 }
-#teleform label:nth-child(6){
+#teleform label:nth-child(7){
 	margin-left:42%;  
 	width:40%;
 }
-#teleform label:nth-child(6) input{
+#teleform label:nth-child(7) input{
 	width:5%;
 	vertical-align:middle;
 	margin-bottom:6px;
@@ -150,11 +150,11 @@ header a:hover{
 	height:50px;
 	font-size:15px;
 }
-#mailform label:nth-child(6){
+#mailform label:nth-child(7){
 	margin-left:42%;  
 	width:40%;
 }
-#mailform label:nth-child(6) input{
+#mailform label:nth-child(7) input{
 	width:5%;
 	vertical-align:middle;
 	margin-bottom:6px;
