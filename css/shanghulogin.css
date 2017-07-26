@@ -9,12 +9,14 @@
 }
 /*body*/
 body{
-	height:750px;
+	height:797px;
 	display:flex;
 	flex-direction:row;
 	justify-content:center;
 	align-items:center;
-	background-image:url(../images/sign.jpg);
+	background-image:url(../images/706370.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
 }
 #section{
 	width:270px;
