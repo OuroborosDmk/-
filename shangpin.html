@@ -4,26 +4,16 @@
 <head>
 	<meta charset="UTF-8"/>
 	<link rel="stylesheet" type="text/css" href="./css/shangpin.css"/>
-    <script defer="defer" src=".js/jquery-3.2.1.min.js"></script>
-    <script defer="defer" src=".js/shangpin.js"></script>
-    
 </head>
 <body>
 	<header>
         <img src="./images/sign.jpg" alt="sign"/>
         <p>XX商城</p>
-        <p>已经有账号？<a href="javascript:void(0)">请登录</a></p>
+        <p>已经有账号？<a href="login.html">请登录</a></p>
     </header>
     <div class="shoppingbox">
     	<div class="imgbox">
     		<img src="./images/sign.jpg"/>
-    		<ul>
-    			<li><img src="./images/sign.jpg"/></li>
-    			<li><img src="./images/sign.jpg"/></li>
-    			<li><img src="./images/sign.jpg"/></li>
-    			<li><img src="./images/sign.jpg"/></li>
-    			<li><img src="./images/sign.jpg"/></li>
-    		</ul>
     	</div>
     	<div class="thingbox">
     		<h4>华为UAWEI noya 2 4GB+64GB 玫瑰金 移动联通电信4G手机 双卡双待</h4>
@@ -33,22 +23,75 @@
     		<p>配送至<a href="javascript:void(0)">&nbsp;沈阳&nbsp;</a>有现货,预计XXXX可以送达</p>
     		<p>重量：1.2</p>
     		<a href="javascript:void(0)">联系卖家<img src="./images/sign.jpg"/></a>
-    		<div><ul><li>-</li><li>0</li><li>+</li></ul><input type="button" value="加入购物车"></input></div>
+    		<div><ul><li id="mthing">-</li><li id="numberofthing">0</li><li id="sthing">+</li></ul><input id="input" type="button" value="加入购物车"></input></div>
     		<!--如果用户已经购买过-->
     		<div class="pingfen">
     			<p>对商品还满意吗，请打分</p>
                 <ul id="shopstar">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="starli"></li>
+                    <li class="starli"></li>
+                    <li class="starli"></li>
+                    <li class="starli"></li>
+                    <li class="starli"></li>
                 </ul>
+                <p style="margin-left:50px;" id="starpoint">目前&nbsp;0分</p>
+                <img src="./images/001.jpg"/>
     		</div>
     	</div>
     </div>
-    <footer>
-    	<a href="javascript:void(0)">联系我们</a>
-    </footer>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script>
+        //控制购物车数量
+        var numberofthing=document.getElementById("numberofthing");
+        var number=parseInt(numberofthing.innerHTML);
+        document.getElementById("mthing").onclick=function(){
+            if(number == 0){
+                return;
+            }
+            else{
+                number--;
+                numberofthing.innerHTML=number;
+            }
+        }
+        document.getElementById("sthing").onclick=function(){
+            number++;
+            numberofthing.innerHTML=number;
+        }
+        document.getElementById("input").onclick=function(){
+            if(number==0){
+                alert("未选择任何数量");
+                return;
+            }
+            else{
+                alert("加入购物车成功");
+                number=0;
+                numberofthing.innerHTML=number;
+            }
+        }
+        //评分系统
+        var num=0;
+        $staritem=$("#shopstar").find(".starli");
+        function getstar(num){
+            $staritem.each(function(index){
+                if(index<num){
+                    $(this).css("background-image","url(./images/star02.png)");
+                }
+                else{
+                    $(this).css("background-image","url(./images/star01.png)");
+                }
+            });
+        }
+        getstar(num);
+        $staritem.on("mouseover",function(){
+            getstar($(this).index()+1);
+        }).on("click",function(){
+            num=$(this).index()+1;
+            $("#starpoint").html("目前&nbsp;"+num+"分");
+        });
+        $("#shopstar").on("mouseout",function(){
+            getstar(num);
+        });
+        //商品展示
+    </script>
 </body>
 </html>

@@ -8,14 +8,15 @@ a{
 	text-decoration:none;
 }
 header{
-	height:120px;
+	height:110px;
 	width:100%;
-	border-bottom:2px solid #C0C0C0;
+	border-bottom:5px solid blue;
 	background-color:white;
+	opacity:1;
 }
 header img{
-	width:110px;
-	height:110px;
+	width:100px;
+	height:100px;
 	float:left;
 	margin-left:12%;
 }
@@ -39,13 +40,17 @@ header a:hover{
 	text-decoration:none;
 }
 body{
-	background-color:#eee;
+	background-image:url(../images/706370.jpg);
+	background-size:100% auto;
 }
 .shoppingbox{
+	border-radius:20px;
 	margin: 0 auto;
+	margin-top:50px;
 	width:1200px;
 	height:572px;
 	background-color:white;
+	border:5px solid blue;
 }
 .imgbox{
 	border-right:1px solid #C0C0C0;
@@ -61,24 +66,6 @@ body{
 	height:380px;
 	margin: 0 auto;
 	border:1px solid #eee;
-}
-.imgbox ul{
-	list-style:none;
-	width:100%;
-	height:100px;
-}
-.imgbox li{
-	width:19%;
-	margin-right:1%;
-	float:left;
-	box-sizing:border-box;
-}
-.imgbox li > img{
-	width:100%;
-	height:100%;
-}
-.imgbox li:hover{
-	border:2px solid red;
 }
 .thingbox{
 	float:right;
@@ -140,7 +127,7 @@ body{
 	width:100%;
 	height:60px;
 }
-.thingbox ul{
+.thingbox > div:nth-child(9) ul{
 	float:left;
 	list-style:none;
 	width:100px;
@@ -150,24 +137,24 @@ body{
 	margin-left:30px;
 	margin-top:20px;
 }
-.thingbox li{
+.thingbox > div:nth-child(9) li{
 	float:left;
 	line-height:19px;
 }
-.thingbox li:nth-child(1){
+.thingbox > div:nth-child(9) li:nth-child(1){
 	width:30%;
 	height:100%;
 	box-sizing:border-box;
 	border-right:1px solid #C0C0C0;
 	cursor:pointer;
 }
-.thingbox li:nth-child(2){
+.thingbox > div:nth-child(9) li:nth-child(2){
 	width:40%;
 	height:100%;
 	box-sizing:border-box;
 	border-right:1px solid #C0C0C0;
 }
-.thingbox li:nth-child(3){
+.thingbox > div:nth-child(9) li:nth-child(3){
 	width:30%;
 	height:100%;
 	cursor:pointer;
@@ -184,12 +171,38 @@ body{
 	line-height:49px;
 }
 .pingfen{
-	display:none;
 	margin: 0 auto;
 	margin-top:40px;
 	width:80%;
 	height:200px;
-	border:1px solid black;
+	padding-top:30px;
+	box-sizing:border-box;
+	border-top:0.5px solid #C0C0C0;
+	border-bottom:0.5px solid #C0C0C0;
+	padding-left:20px;
+	border-radius:10px;
+}
+.pingfen ul{
+	list-style:none;
+	margin-top:20px;
+	width:200px;
+	height:50px;
+}
+.starli{
+	cursor:pointer;
+	width:40px;
+	height:50px;
+	float:left;
+	background-image:url(../images/star01.png);
+	background-repeat:no-repeat;
+}
+.pingfen img{
+	position:relative;
+	left:240px;
+	bottom:100px;
+	width:120px;
+	height:120px;
+	border-radius:10px;
 }
 footer{
 	background-color:#C0C0C0;
