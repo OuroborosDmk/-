@@ -16,6 +16,8 @@
 		<link type="text/css" href="./CSS/JD_discount.css" rel="stylesheet"/>
 		<link type="text/css" href="./CSS/JD_recommend.css" rel="stylesheet"/>
 		<link type="text/css" href="./CSS/index.css" rel="stylesheet"/>
+		<link type="text/css" href="./CSS/picbox.css" rel="stylesheet"/>
+		<script defer="defer" src="./js/index.js"></script>
 	</head>
 	<body>
 		<!--页头-->
@@ -242,7 +244,22 @@
 				</div>
 			</div>
 			<div class="body_two_three">
-				<div><p>这是一个大大的轮播图</p></div>
+				<div id="picbox">
+					<div id="list" style="left:-790px;">
+						<img src="./images/706370.jpg" alt="1"/>
+						<img src="./images/706370.jpg" alt="1"/>
+						<img src="./images/386907.jpg" alt="2"/>
+						<img src="./images/107241.jpg" alt="3"/>
+						<img src="./images/107241.jpg" alt="3"/>
+					</div>
+					<div id="buttons">
+						<span index="1" class="on"></span>
+						<span index="2"></span>
+						<span index="3"></span>
+					</div>
+					<a href="javascript:" id="prev" class="other">&lt;</a>
+					<a href="javascript:" id="next" class="other">&gt;</a>
+				</div>
 				<div>
 					<div><a href="javascript:void(0)"><img src="./images/two_three_two.jpg"/></a></div>
 					<div><a href="javascript:void(0)"><img src="./images/two_three_one.jpg"/></a></div>

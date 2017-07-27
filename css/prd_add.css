@@ -1,0 +1,108 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+a{
+	text-decoration:none;
+}
+body{
+	background-color:#eee;
+	height:1600px;
+}
+.body_one{
+	width:140px;
+	float:left;
+	height:1600px;
+	background-color:rgb(39,40,34);
+}
+.body_one img{
+	width:100px;
+	height:100px;
+	margin-top:20px;
+	margin-left:20px;
+}
+.body_one ul{
+	width:140px;
+	height:200px;
+	margin-top:40px;
+	list-style:none;
+}
+.body_one li{
+	text-align:center;
+	width:140px;
+	height:50px;
+	
+}
+.body_one li > a{
+	color:white;
+}
+.body_one li > a:hover{
+	color:red;
+}
+.body_two{
+	width:100%;
+	height:1600px;
+	background-color:#eee;
+}
+.body_two_one{
+	background-color:rgb(39,40,34);
+	width:100%;
+	height:100px;
+	margin-bottom:40px;
+}
+.body_two_one p:nth-child(1){
+	position:relative;
+	top:20px;
+	left:30px;
+	color:#eee;
+	font-size:25px;
+}
+.body_two_one a:nth-child(2){
+	color:white;
+	float:right;
+	margin-top:20px;
+	margin-right:20px;
+}
+.body_two_one a:nth-child(3){
+	color:white;
+	float:right;
+	margin-top:20px;
+	margin-right:20px;
+}
+.body_two_one a:hover{
+	color:red;
+}
+#formone{
+	width:500px;
+	height:500px;
+	margin: 0 auto;
+	display:block;
+}
+#formone > div{
+	line-height:49px;
+	width:100%;
+	height:55px;
+	padding-left:20px; 
+	display:block;
+}
+#formone input{
+	margin-left:20px;
+	height:40px;
+	width:260px;
+}
+#formone label{
+	display:inline-block;
+	margin-left:1%;
+	width:18%;
+	height:40px;
+}
+#formone div:nth-child(9) button{
+	margin-left:35px;
+	width:150px;
+	height:40px;
+	outline:none;
+}
+#formone div:nth-child(9) button:hover{
+	border:1px solid blue;
+}
